@@ -6,8 +6,9 @@ USER root
 RUN chgrp -R 0 /home/openvino/app && \
     chmod -R g=u /home/openvino/app
     
-USER openvino
 RUN /opt/intel/openvino/deployment_tools/open_model_zoo/tools/downloader/downloader.py  --name person-detection-retail-0013
+
+USER openvino
 
 COPY entrypoint.sh /home/openvino/app/entrypoint.sh
 
