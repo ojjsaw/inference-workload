@@ -5,18 +5,11 @@ source /opt/intel/openvino/bin/setupvars.sh
 # directory for results
 mkdir -p /home/openvino/data/FP16
 
-# /opt/intel/openvino/deployment_tools/tools/benchmark_tool/benchmark_app.py \
-#     -m "intel/person-detection-retail-0013/FP16-INT8/person-detection-retail-0013.xml" \
-#     -api sync \
-#     -niter 1000 \
-#     -report_type detailed_counters \
-#     -report_folder "/home/openvino/data" > output.txt
-
 # run benchmark app
 OUTPUT=`/opt/intel/openvino/deployment_tools/tools/benchmark_tool/benchmark_app.py \
-    -m "intel/person-detection-retail-0013/FP16-INT8/person-detection-retail-0013.xml" \
+    -m "intel/person-detection-retail-0013/$PRECISION/person-detection-retail-0013.xml" \
     -api sync \
-    -niter 10 \
+    -niter 500 \
     -report_type detailed_counters \
     -report_folder "/home/openvino/data"`
 
