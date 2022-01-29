@@ -1,13 +1,21 @@
 # inference-workload
 
+* public mobilenet-ssd caffemodel from open model zoo
+* Coverted to FP32 IR for inference
+* Accuracy-aware quanitization INT8 using Post-Training Optimization Tool.
+
+> Run devcloud.intel.com tutorials/pot notebook for above steps.
+
+| Metric | FP32 | INT8 |
+| :---: | :---: | :---: |
+| Accuracy | 79.40% | 79.38% |
+
+### Build locally
 ```
 docker build -t test-container:latest .
 ```
 
+### Run locally by mounting directory
 ```
-docker run -it --rm -v ${PWD}:/app openvino/ubuntu20_dev_no_samples:2021.4.2
-```
-
-```
-docker run --rm -e PRECISION=FP16-INT8 -v ${PWD}:/home/openvino/data test-container:latest
+docker run --rm -e PRECISION=INT8 -v ${PWD}/tmp:/home/openvino/data test-container:latest
 ```

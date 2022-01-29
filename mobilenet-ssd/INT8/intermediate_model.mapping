@@ -1,0 +1,483 @@
+<?xml version="1.0" ?>
+<mapping>
+	<map>
+		<framework name="conv16_2_mbox_conf" out_port_id="conv16_2_mbox_conf"/>
+		<IR id="700" name="conv16_2_mbox_conf" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv5/dw" out_port_id="conv5/dw"/>
+		<IR id="225" name="conv5/dw" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv9/dw" out_port_id="conv9/dw"/>
+		<IR id="321" name="conv9/dw" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv8/dw" out_port_id="conv8/dw"/>
+		<IR id="298" name="conv8/dw/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="detection_out" out_port_id="detection_out"/>
+		<IR id="803" name="detection_out" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv3/dw" out_port_id="conv3/dw"/>
+		<IR id="178" name="conv3/dw/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv7/dw" out_port_id="conv7/dw"/>
+		<IR id="273" name="conv7/dw" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv15_2_mbox_loc_flat" out_port_id="conv15_2_mbox_loc_flat"/>
+		<IR id="552" name="conv15_2_mbox_loc_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv6/dw" out_port_id="conv6/dw"/>
+		<IR id="250" name="conv6/dw/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv3/dw" out_port_id="conv3/dw"/>
+		<IR id="177" name="conv3/dw" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="mbox_priorbox" out_port_id="mbox_priorbox"/>
+		<IR id="802" name="mbox_priorbox" out_port_id="6"/>
+	</map>
+	<map>
+		<framework name="conv11" out_port_id="conv11"/>
+		<IR id="381" name="conv11/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv16_1" out_port_id="conv16_1"/>
+		<IR id="576" name="conv16_1/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv16_2_mbox_loc" out_port_id="conv16_2_mbox_loc"/>
+		<IR id="591" name="conv16_2_mbox_loc" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv11" out_port_id="conv11"/>
+		<IR id="380" name="conv11" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv4" out_port_id="conv4"/>
+		<IR id="213" name="conv4/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv17_2_mbox_loc_perm" out_port_id="conv17_2_mbox_loc_perm"/>
+		<IR id="636" name="conv17_2_mbox_loc_perm" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv15_2" out_port_id="conv15_2"/>
+		<IR id="544" name="conv15_2/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv15_1" out_port_id="conv15_1"/>
+		<IR id="532" name="conv15_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv17_2_mbox_conf_perm" out_port_id="conv17_2_mbox_conf_perm"/>
+		<IR id="715" name="conv17_2_mbox_conf_perm" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv8/dw" out_port_id="conv8/dw"/>
+		<IR id="297" name="conv8/dw" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv14_1" out_port_id="conv14_1"/>
+		<IR id="490" name="conv14_1/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv12/dw" out_port_id="conv12/dw"/>
+		<IR id="423" name="conv12/dw/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv10/dw" out_port_id="conv10/dw"/>
+		<IR id="346" name="conv10/dw/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv5" out_port_id="conv5"/>
+		<IR id="237" name="conv5/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv11_mbox_conf" out_port_id="conv11_mbox_conf"/>
+		<IR id="648" name="conv11_mbox_conf" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv0" out_port_id="conv0"/>
+		<IR id="117" name="conv0/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv17_2_mbox_priorbox" out_port_id="conv17_2_mbox_priorbox"/>
+		<IR id="801" name="conv17_2_mbox_priorbox" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv15_2_mbox_conf" out_port_id="conv15_2_mbox_conf"/>
+		<IR id="687" name="conv15_2_mbox_conf" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv15_2_mbox_conf_flat" out_port_id="conv15_2_mbox_conf_flat"/>
+		<IR id="691" name="conv15_2_mbox_conf_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="mbox_conf_flatten" out_port_id="mbox_conf_flatten"/>
+		<IR id="723" name="mbox_conf_flatten" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv10" out_port_id="conv10"/>
+		<IR id="356" name="conv10" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv10/dw" out_port_id="conv10/dw"/>
+		<IR id="345" name="conv10/dw" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv6/dw" out_port_id="conv6/dw"/>
+		<IR id="249" name="conv6/dw" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv13" out_port_id="conv13"/>
+		<IR id="458" name="conv13/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv8" out_port_id="conv8"/>
+		<IR id="308" name="conv8" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv7/dw" out_port_id="conv7/dw"/>
+		<IR id="274" name="conv7/dw/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv14_2_mbox_conf_flat" out_port_id="conv14_2_mbox_conf_flat"/>
+		<IR id="678" name="conv14_2_mbox_conf_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv13_mbox_conf" out_port_id="conv13_mbox_conf"/>
+		<IR id="661" name="conv13_mbox_conf" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv14_2_mbox_loc_flat" out_port_id="conv14_2_mbox_loc_flat"/>
+		<IR id="509" name="conv14_2_mbox_loc_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv13" out_port_id="conv13"/>
+		<IR id="457" name="conv13" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv2" out_port_id="conv2"/>
+		<IR id="165" name="conv2/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv4/dw" out_port_id="conv4/dw"/>
+		<IR id="202" name="conv4/dw/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv8" out_port_id="conv8"/>
+		<IR id="309" name="conv8/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv11_mbox_conf_perm" out_port_id="conv11_mbox_conf_perm"/>
+		<IR id="650" name="conv11_mbox_conf_perm" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv16_2_mbox_conf_flat" out_port_id="conv16_2_mbox_conf_flat"/>
+		<IR id="704" name="conv16_2_mbox_conf_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv2/dw" out_port_id="conv2/dw"/>
+		<IR id="154" name="conv2/dw/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv13/dw" out_port_id="conv13/dw"/>
+		<IR id="446" name="conv13/dw" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv12/dw" out_port_id="conv12/dw"/>
+		<IR id="422" name="conv12/dw" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv17_2_mbox_loc" out_port_id="conv17_2_mbox_loc"/>
+		<IR id="634" name="conv17_2_mbox_loc" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv14_2_mbox_conf_perm" out_port_id="conv14_2_mbox_conf_perm"/>
+		<IR id="676" name="conv14_2_mbox_conf_perm" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv16_1" out_port_id="conv16_1"/>
+		<IR id="575" name="conv16_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv15_2" out_port_id="conv15_2"/>
+		<IR id="543" name="conv15_2" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv14_2" out_port_id="conv14_2"/>
+		<IR id="501" name="conv14_2/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv3" out_port_id="conv3"/>
+		<IR id="189" name="conv3/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv15_2_mbox_loc_perm" out_port_id="conv15_2_mbox_loc_perm"/>
+		<IR id="550" name="conv15_2_mbox_loc_perm" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv1/dw" out_port_id="conv1/dw"/>
+		<IR id="129" name="conv1/dw" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv16_2_mbox_priorbox" out_port_id="conv16_2_mbox_priorbox"/>
+		<IR id="788" name="conv16_2_mbox_priorbox" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv0" out_port_id="conv0"/>
+		<IR id="116" name="conv0" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="mbox_conf_softmax" out_port_id="mbox_conf_softmax"/>
+		<IR id="721" name="mbox_conf_softmax" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv11_mbox_loc" out_port_id="conv11_mbox_loc"/>
+		<IR id="385" name="conv11_mbox_loc" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv11/dw" out_port_id="conv11/dw"/>
+		<IR id="370" name="conv11/dw/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="mbox_loc" out_port_id="mbox_loc"/>
+		<IR id="639" name="mbox_loc" out_port_id="6"/>
+	</map>
+	<map>
+		<framework name="conv13_mbox_priorbox" out_port_id="conv13_mbox_priorbox"/>
+		<IR id="749" name="conv13_mbox_priorbox" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv2" out_port_id="conv2"/>
+		<IR id="164" name="conv2" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv11_mbox_loc_perm" out_port_id="conv11_mbox_loc_perm"/>
+		<IR id="387" name="conv11_mbox_loc_perm" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv15_2_mbox_conf_perm" out_port_id="conv15_2_mbox_conf_perm"/>
+		<IR id="689" name="conv15_2_mbox_conf_perm" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv13/dw" out_port_id="conv13/dw"/>
+		<IR id="447" name="conv13/dw/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv9/dw" out_port_id="conv9/dw"/>
+		<IR id="322" name="conv9/dw/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv16_2_mbox_loc_flat" out_port_id="conv16_2_mbox_loc_flat"/>
+		<IR id="595" name="conv16_2_mbox_loc_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv14_2_mbox_conf" out_port_id="conv14_2_mbox_conf"/>
+		<IR id="674" name="conv14_2_mbox_conf" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv14_2_mbox_priorbox" out_port_id="conv14_2_mbox_priorbox"/>
+		<IR id="762" name="conv14_2_mbox_priorbox" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv4/dw" out_port_id="conv4/dw"/>
+		<IR id="201" name="conv4/dw" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv13_mbox_conf_flat" out_port_id="conv13_mbox_conf_flat"/>
+		<IR id="665" name="conv13_mbox_conf_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv12" out_port_id="conv12"/>
+		<IR id="433" name="conv12" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv14_2_mbox_loc" out_port_id="conv14_2_mbox_loc"/>
+		<IR id="505" name="conv14_2_mbox_loc" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv16_2_mbox_loc_perm" out_port_id="conv16_2_mbox_loc_perm"/>
+		<IR id="593" name="conv16_2_mbox_loc_perm" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv13_mbox_loc_flat" out_port_id="conv13_mbox_loc_flat"/>
+		<IR id="466" name="conv13_mbox_loc_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv12" out_port_id="conv12"/>
+		<IR id="434" name="conv12/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv15_2_mbox_loc" out_port_id="conv15_2_mbox_loc"/>
+		<IR id="548" name="conv15_2_mbox_loc" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv1" out_port_id="conv1"/>
+		<IR id="141" name="conv1/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv11_mbox_conf_flat" out_port_id="conv11_mbox_conf_flat"/>
+		<IR id="652" name="conv11_mbox_conf_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="data" out_port_id="data"/>
+		<IR id="102" name="data" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="conv6" out_port_id="conv6"/>
+		<IR id="260" name="conv6" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv17_1" out_port_id="conv17_1"/>
+		<IR id="618" name="conv17_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv13_mbox_conf_perm" out_port_id="conv13_mbox_conf_perm"/>
+		<IR id="663" name="conv13_mbox_conf_perm" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv17_2_mbox_loc_flat" out_port_id="conv17_2_mbox_loc_flat"/>
+		<IR id="638" name="conv17_2_mbox_loc_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv7" out_port_id="conv7"/>
+		<IR id="284" name="conv7" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv13_mbox_loc_perm" out_port_id="conv13_mbox_loc_perm"/>
+		<IR id="464" name="conv13_mbox_loc_perm" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv17_2_mbox_conf" out_port_id="conv17_2_mbox_conf"/>
+		<IR id="713" name="conv17_2_mbox_conf" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv1" out_port_id="conv1"/>
+		<IR id="140" name="conv1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv10" out_port_id="conv10"/>
+		<IR id="357" name="conv10/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv11_mbox_loc_flat" out_port_id="conv11_mbox_loc_flat"/>
+		<IR id="389" name="conv11_mbox_loc_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv14_2" out_port_id="conv14_2"/>
+		<IR id="500" name="conv14_2" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv17_2" out_port_id="conv17_2"/>
+		<IR id="630" name="conv17_2/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv16_2" out_port_id="conv16_2"/>
+		<IR id="587" name="conv16_2/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv15_1" out_port_id="conv15_1"/>
+		<IR id="533" name="conv15_1/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv14_1" out_port_id="conv14_1"/>
+		<IR id="489" name="conv14_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv14_2_mbox_loc_perm" out_port_id="conv14_2_mbox_loc_perm"/>
+		<IR id="507" name="conv14_2_mbox_loc_perm" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv4" out_port_id="conv4"/>
+		<IR id="212" name="conv4" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv5/dw" out_port_id="conv5/dw"/>
+		<IR id="226" name="conv5/dw/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="mbox_conf" out_port_id="mbox_conf"/>
+		<IR id="718" name="mbox_conf" out_port_id="6"/>
+	</map>
+	<map>
+		<framework name="conv3" out_port_id="conv3"/>
+		<IR id="188" name="conv3" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv16_2_mbox_conf_perm" out_port_id="conv16_2_mbox_conf_perm"/>
+		<IR id="702" name="conv16_2_mbox_conf_perm" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv9" out_port_id="conv9"/>
+		<IR id="333" name="conv9/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv16_2" out_port_id="conv16_2"/>
+		<IR id="586" name="conv16_2" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv11/dw" out_port_id="conv11/dw"/>
+		<IR id="369" name="conv11/dw" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv1/dw" out_port_id="conv1/dw"/>
+		<IR id="130" name="conv1/dw/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv13_mbox_loc" out_port_id="conv13_mbox_loc"/>
+		<IR id="462" name="conv13_mbox_loc" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv9" out_port_id="conv9"/>
+		<IR id="332" name="conv9" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv17_2_mbox_conf_flat" out_port_id="conv17_2_mbox_conf_flat"/>
+		<IR id="717" name="conv17_2_mbox_conf_flat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv11_mbox_priorbox" out_port_id="conv11_mbox_priorbox"/>
+		<IR id="736" name="conv11_mbox_priorbox" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="mbox_conf_reshape" out_port_id="mbox_conf_reshape"/>
+		<IR id="720" name="mbox_conf_reshape" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv15_2_mbox_priorbox" out_port_id="conv15_2_mbox_priorbox"/>
+		<IR id="775" name="conv15_2_mbox_priorbox" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv7" out_port_id="conv7"/>
+		<IR id="285" name="conv7/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv6" out_port_id="conv6"/>
+		<IR id="261" name="conv6/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv2/dw" out_port_id="conv2/dw"/>
+		<IR id="153" name="conv2/dw" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv17_1" out_port_id="conv17_1"/>
+		<IR id="619" name="conv17_1/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv17_2" out_port_id="conv17_2"/>
+		<IR id="629" name="conv17_2" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv5" out_port_id="conv5"/>
+		<IR id="236" name="conv5" out_port_id="2"/>
+	</map>
+</mapping>
