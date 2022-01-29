@@ -1,12 +1,10 @@
 FROM openvino/ubuntu20_dev_no_samples:2021.4.2
 
-ENV PRECISION=FP32
-ENV API=sync
-ENV ITERATIONS=500 
-ENV DEVICE=CPU
+# FP32/INT8 | sync/async | ITERATIONS n | CPU/GPU
+ENV PRECISION=FP32 API=sync NITER=500 DEVICE=CPU 
 
 WORKDIR /home/openvino/app
-COPY entrypoint.sh /home/openvino/app/entrypoint.sh
-COPY mobilenet-ssd /home/openvino/app/mobilenet-ssd
+COPY entrypoint.sh .
+COPY mobilenet-ssd mobilenet-ssd/.
 
 ENTRYPOINT [ "/home/openvino/app/entrypoint.sh" ]
